@@ -184,7 +184,9 @@ public class GoEnvironment {
 		if(goOs != null) {
 			putMapEntry(env, GoEnvironmentConstants.GOOS, goOs.asString());
 		}
-		
+
+		putMapEntry(env, GoEnvironmentConstants.GO15VENDOREXPERIMENT, "1");
+
 		if(goRootInPath) {
 			// Add GoRoot to path. See #113 for rationale
 			ProcessUtils.addDirToPathEnv(getGoRoot_Location().toPath(), pb);

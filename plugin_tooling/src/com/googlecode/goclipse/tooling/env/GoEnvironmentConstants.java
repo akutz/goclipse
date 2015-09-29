@@ -16,5 +16,6 @@ public interface GoEnvironmentConstants {
 	public static final String GOARCH = "GOARCH";
 	public static final String GOOS   = "GOOS";
 	public static final String GOPATH = "GOPATH";
-	
+	public static final String GO15VENDOREXPERIMENT = "GO15VENDOREXPERIMENT";
+
 }
